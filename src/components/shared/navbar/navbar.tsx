@@ -1,21 +1,23 @@
 import { component$ } from '@builder.io/qwik';
 import { QwikLogo } from '../../icons/qwik';
 import styles from './navbar.module.css';
+import { Link } from '@builder.io/qwik-city';
 
 export default component$(() => {
 	return (
 		<navbar class={styles.header}>
 			<div class={['container', styles.wrapper]}>
 				<div class={styles.logo}>
-					<a href='/' title='qwik'>
+					<Link href='/' title='qwik'>
 						<QwikLogo height={50} />
-					</a>
+					</Link>
 				</div>
 				<ul>
 					<li>
-						<a href='https://qwik.builder.io/tutorial/welcome/overview/' target='_blank'>
-							Tutorials
-						</a>
+						<Link href='/pokemons/list-ssr/'>Lista SSR</Link>
+					</li>
+					<li>
+						<Link href='/pokemons/list-client/'>Lista Client</Link>
 					</li>
 				</ul>
 			</div>
