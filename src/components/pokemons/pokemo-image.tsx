@@ -1,6 +1,6 @@
 import { component$, useSignal, useTask$ } from '@builder.io/qwik';
 
-export const PokemonImage = component$((props: { id: number; image: boolean; mostrar?: boolean }) => {
+export const PokemonImage = component$((props: { id: number; image?: boolean; mostrar?: boolean }) => {
 	const cargando = useSignal(true);
 
 	useTask$(({ track }) => {
