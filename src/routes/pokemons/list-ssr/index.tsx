@@ -33,7 +33,7 @@ export default component$(() => {
 		<>
 			<div class='flex flex-col'>
 				<span class='mt-5 text-2xl'>Listado de pokemons</span>
-				<span class='text-2xl'>Cantidad actual: {offset} </span>
+				<span class='text-2xl'>Cantidad actual: {offset.value + 18} </span>
 				<span class='text-2xl'>Cargando.. {location.isNavigating ? 'si' : 'no'}</span>
 			</div>
 
