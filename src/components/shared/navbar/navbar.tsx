@@ -14,6 +14,9 @@ export default component$(() => {
 				</div>
 				<ul>
 					<li>
+						<Link href='/counter'>Counter Hook</Link>
+					</li>
+					<li>
 						<Link href='/pokemons/list-ssr/'>Lista SSR</Link>
 					</li>
 					<li>
