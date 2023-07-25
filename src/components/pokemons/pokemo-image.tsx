@@ -17,15 +17,18 @@ export const PokemonImage = component$((props: { id: number; image?: boolean; mo
 			}}
 		>
 			{cargando.value && <span>Cargando...</span>}
-			<img
-				class={['object-cover transition-all', { hidden: cargando.value, 'brightness-0': props.mostrar }]}
-				src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/
+
+			{props.id && (
+				<img
+					class={['object-cover transition-all', { hidden: cargando.value, 'brightness-0': props.mostrar }]}
+					src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/
 				${(props.image ? 'back/' : '') + props.id}.png`}
-				alt='Pokemon'
-				height={96}
-				width={96}
-				onLoad$={() => (cargando.value = false)}
-			/>
+					alt='Pokemon'
+					height={96}
+					width={96}
+					onLoad$={() => (cargando.value = false)}
+				/>
+			)}
 		</div>
 	);
 });
