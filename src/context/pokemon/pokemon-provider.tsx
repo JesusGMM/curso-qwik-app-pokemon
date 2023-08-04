@@ -4,7 +4,7 @@ import { type PokemonGameState, PokemonContext } from './pokemon.context';
 
 export const PokemonProvider = component$(() => {
 	const pokemonGame = useStore<PokemonGameState>({
-		pokemonId: 1,
+		pokemonId: 0,
 		isVisible: false,
 		backImage: false,
 	});
@@ -23,7 +23,7 @@ export const PokemonProvider = component$(() => {
 			const data = JSON.parse(localStorage.getItem('pokemon-game')!) as PokemonGameState;
 			pokemonGame.backImage = data.backImage ?? true;
 			pokemonGame.isVisible = data.isVisible ?? true;
-			pokemonGame.pokemonId = data.pokemonId ?? 1;
+			pokemonGame.pokemonId = data.pokemonId ?? 0;
 		}
 	});
 

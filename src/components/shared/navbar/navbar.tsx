@@ -22,6 +22,12 @@ export default component$(() => {
 					<li>
 						<Link href='/pokemons/list-client/'>Lista Client</Link>
 					</li>
+					<li>
+						<Link href='/login/'>Iniciar Seccion</Link>
+					</li>
+					<li>
+						<Link href='/dashboard/'>Inicio</Link>
+					</li>
 				</ul>
 			</div>
 		</navbar>
