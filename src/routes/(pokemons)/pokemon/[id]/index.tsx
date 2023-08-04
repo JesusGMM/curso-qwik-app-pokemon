@@ -1,6 +1,6 @@
 import { component$ } from '@builder.io/qwik';
 import { useLocation, routeLoader$ } from '@builder.io/qwik-city';
-import { PokemonImage } from '../../../components/pokemons/pokemo-image';
+import { PokemonImage } from '../../../../components/pokemons/pokemo-image';
 
 import { usePokemonGame } from '~/hooks/use-pokemon-game';
 
